@@ -1,0 +1,216 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e6e8;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background: #fefefe;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 85%;
+    max-width: 1100px;
+    text-align: left;
+}
+
+/* Títulos de la página */
+h5, h2 {
+    text-align: left;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+th, td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 2px solid #dee2e6;
+}
+
+th {
+    background-color: #34495e;
+    font-weight: 600;
+    color: #fff;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+td:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botones en la tabla */
+.table .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.table .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    border: none;
+}
+
+.table .btn-info {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.table .btn-warning {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.table .btn-danger {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.table .btn:hover {
+    transform: scale(1.05);
+}
+
+.table .btn-info:hover {
+    background-color: #16a085;
+}
+
+.table .btn-warning:hover {
+    background-color: #d35400;
+}
+
+.table .btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Estilo de los formularios */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #2c3e50;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+/* Botones generales */
+button, .btn {
+    padding: 12px 20px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover, .btn:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}
+
+/* Modal */
+.modal-header {
+    background-color: #34495e;
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header .close {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.modal-header .close:hover {
+    color: #1abc9c;
+}
+
+.modal-body {
+    padding: 20px;
+    font-size: 14px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* Botón de cerrar en la esquina izquierda */
+.modal-header .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 18px;
+}
+
+/* Información de sesión */
+.session-info {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.session-info button {
+    background-color: #e74c3c;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: white;
+  
+ 
+}
+

@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #1e1e2f, #2c2c54);
+    color: #ffffff;
+}
+
+/* Contenedor principal */
+.registro-container {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 50px 35px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título */
+.registro-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #4ca1af;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #bfc0c5;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 12px 15px;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.3s, transform 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4ca1af;
+    transform: scale(1.02);
+}
+
+/* Botón */
+button {
+    background: #4ca1af;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(76, 161, 175, 0.3);
+}
+
+button:hover {
+    background: #3b8d99;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Enlace de inicio de sesión */
+.login-link {
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #4ca1af;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .registro-container {
+        padding: 30px 20px;
+    }
+
+    .registro-container h2 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
